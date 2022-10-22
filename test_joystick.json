@@ -1,0 +1,64 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "node backend -c \"ipd524qa7t9lbqc66eg1o71d7i3slf\" -s \"Y8yVV3Rll5K2sSyBwi90EJP5GEC18oo7Kr8Aph2tDbY=\" -o \"837106469\"",
+  "backendFolderName": "extensions-hello-world\\services",
+  "certificateExceptions": [],
+  "extensionViews": [],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8081/config.html",
+    "configurationLocation": "hosted",
+    "description": "",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "ipd524qa7t9lbqc66eg1o71d7i3slf",
+    "installationCount": -42,
+    "liveConfigUrl": "https://localhost:8081/config.js",
+    "name": "test_joystick",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "",
+    "supportEmail": "",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": "https://localhost:8081/panel.html",
+    "viewerUrls": {
+      "panel": "https://localhost:8081/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost:8081/panel.html",
+        "height": 300,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8081/config.html",
+        "canLinkExternalContent": false
+      },
+      "liveConfig": {
+        "viewerUrl": "https://localhost:8081/config.js",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "extensions-hello-world\\public",
+  "name": "test_joystick",
+  "usingRandomFrontendHostingPort": false,
+  "version": 3
+}

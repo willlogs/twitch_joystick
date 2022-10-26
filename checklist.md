@@ -1,5 +1,8 @@
 ## Stuff that needs to be done
 
-* read the sample code and docs to see what's what
-- code a chatting application
-- create a checklist for the project
+* write a socket io chat app
+* make the app user_id based
+* create rooms for different channels
+- create join & start button
+- create event systems for the controller
+- connect a third app to the server and read controller commands

@@ -5,8 +5,7 @@ const { Channel } = require("./channel");
 let channel_id = 837106469;
 let id = 0;
 
-socket = iocli.connect("http://216.250.122.82/server");
-console.log("connected");
+socket = iocli.connect("216.250.122.82:8000");
 
 socket.on("connection", (socket) => {
 	console.log("connection");

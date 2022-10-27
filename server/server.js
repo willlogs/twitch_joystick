@@ -1,6 +1,7 @@
 const { Server } = require("socket.io");
 const uniqid = require("uniqid");
 const { Channel } = require(__dirname + "/channel");
+const httpProxy = require("http-proxy");
 
 const io = new Server(8000, {
 	cors: {
@@ -41,3 +42,5 @@ io.on("connection", (socket) => {
 		}
 	});
 });
+
+httpProxy.createProxyServer({target: "http:localhost:8000", ws: true}).listen(8000);

@@ -45,29 +45,6 @@ app.use(cors({
   origin: ['*']
 }));
 
-// add get for /color/query
-app.get("/color/query", (req, res) => {
-  console.log("==============query req===============")
-  payload = verify_and_decode(req.headers.authorization, secret);
-  console.log("cid: " + payload.channel_id);
-
-	const currentColor = color;
-	const body = JSON.stringify({
-		content_type: 'application/json',
-		message: currentColor,
-		targets: ['broadcast'],
-	});
-  encode_message(body, payload.channel_id, clientId, secret, ownerId);
-
-  res.send();
-});
-
-// add post for /color/cycle
-app.post("/color/cycle", (req, res) => {
-  console.log("==============cycle req===============")
-  payload = verify_and_decode(req.headers.authorization, secret);
-});
-
 // serve the public folder
 app.use(express.static(__dirname + '/../public/'));
 

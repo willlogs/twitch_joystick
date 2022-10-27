@@ -4,7 +4,7 @@ const bodyparser = require("body-parser");
 const jwt = require("jsonwebtoken");
 const ext = require('commander');
 
-const {verify_and_decode, encode_message} = require("./helperfunctions");
+const {verify_and_decode, encode_message} = require(__dirname + "/helperfunctions");
 
 const app = express();
 const port = 8081;
@@ -12,7 +12,6 @@ const port = 8081;
 let color = "#666666";
 
 ext.
-  version(require('../package.json').version).
   option('-s, --secret <secret>', 'Extension secret').
   option('-c, --client-id <client_id>', 'Extension client ID').
   option('-o, --owner-id <owner_id>', 'Extension owner ID').
@@ -70,7 +69,7 @@ app.post("/color/cycle", (req, res) => {
 });
 
 // serve the public folder
-app.use(express.static('../public/'));
+app.use(express.static(__dirname + '/../public/'));
 
 // start the server
 app.listen(port, () => {

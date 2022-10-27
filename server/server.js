@@ -1,6 +1,6 @@
 const { Server } = require("socket.io");
 const uniqid = require("uniqid");
-const { Channel } = require("./channel");
+const { Channel } = require(__dirname + "/channel");
 
 const io = new Server(8000, {
 	cors: {

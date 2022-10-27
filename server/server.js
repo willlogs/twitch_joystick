@@ -42,5 +42,3 @@ io.on("connection", (socket) => {
 		}
 	});
 });
-
-httpProxy.createProxyServer({target: "http:localhost:8000", ws: true}).listen(8001);

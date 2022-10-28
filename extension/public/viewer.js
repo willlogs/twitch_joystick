@@ -5,7 +5,7 @@ var ebs = "";
 // because who wants to type this every time?
 var twitch = window.Twitch.ext;
 var io = window.io;
-var socket = io.connect('http://216.250.122.82/server');
+var socket = io.connect('localhost:8000');
 var id = "";
 var token = "";
 var userId = "";
